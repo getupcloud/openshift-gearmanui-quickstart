@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Build Gearman config
+oo-erb < $OPENSHIFT_REPO_DIR/app/config/gearmanui.yml.erb > $OPENSHIFT_REPO_DIR/app/config/gearmanui.yml
+
