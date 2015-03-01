@@ -3,7 +3,7 @@
 
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ gearmanui/index.php [L]
+    RewriteRule ^ index.php [L]
 </IfModule>
 
 AuthType Basic
