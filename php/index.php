@@ -1,3 +1,7 @@
 <?php
 
-echo getenv('OPENSHIFT_GEARMAN_IP') . ':' . getenv('OPENSHIFT_GEARMAN_PORT');
+require_once __DIR__.'/../vendor/autoload.php';
+
+$app = new GearmanUI\GearmanUIApplication();
+
+$app->run();
