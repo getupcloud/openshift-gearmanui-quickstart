@@ -8,5 +8,5 @@
 
 AuthType Basic
 AuthName "Autorizacao Requerida"
-AuthUserFile ../../app-root/repo/.htpasswd
+AuthUserFile ../app-root/repo/.htpasswd
 Require valid-user
