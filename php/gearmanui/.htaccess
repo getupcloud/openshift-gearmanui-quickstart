@@ -3,10 +3,10 @@
 
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+    RewriteRule ^ gearmanui/index.php [L]
 </IfModule>
 
 AuthType Basic
 AuthName "Autorizacao Requerida"
-AuthUserFile ../app-root/repo/.htpasswd
+AuthUserFile ../../app-root/repo/.htpasswd
 Require valid-user
