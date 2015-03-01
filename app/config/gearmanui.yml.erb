@@ -1,0 +1,13 @@
+# The list of servers to monitor.
+gearmanui.servers:
+    - name: "Localhost"
+      addr: "<%= ENV['OPENSHIFT_GEARMAN_IP'] %>:<%= ENV['OPENSHIFT_GEARMAN_PORT'] %>"
+
+# General settings.
+gearmanui.settings:
+    # Server info refresh interval, in seconds.
+    # The javascript will ajax the server every 'refresh_interval' seconds for new information.
+    refresh_interval: 5
+
+# By default, only log errors. Check \Monolog\Logger for valid values.
+monolog.level: 400
