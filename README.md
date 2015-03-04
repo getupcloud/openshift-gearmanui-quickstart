@@ -5,11 +5,11 @@ This quickstart deploys a running [Gearman UI](http://gaspaio.github.io/gearmanu
 
 First create an PHP application using this repo as source code:
 
-    $ rhc app-create gearmanui php-5.3 --from-code https://github.com/caruccio/openshift-gearmanui-quickstart
+    $ rhc app-create gearmanui php-5.3 --from-code https://github.com/getupcloud/openshift-gearmanui-quickstart
 
-Then add [Gearman Job Server](https://github.com/caruccio/openshift-gearman-cartridge):
+Then add [Gearman Job Server](https://github.com/getupcloud/openshift-gearman-cartridge):
 
-    $ rhc cartridge-add --app gearmanui https://reflector-getupcloud.getup.io/github/caruccio/openshift-gearman-cartridge
+    $ rhc cartridge-add --app gearmanui https://reflector-getupcloud.getup.io/github/getupcloud/openshift-gearman-cartridge
 
 Now access the web interface at https://gearmanui-$namespace.getup.io/gearmanui
 
